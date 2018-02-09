@@ -20,7 +20,7 @@ public class playerController : MonoBehaviour {
     void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal"); // Returns a value between -1 and 1 whenever left, right, a, or d is pushed
-        float moveVertical = Input.GetAxis("Vertical");     // Retirns a value between -1 and - whenever up, down, w, or s is pushed
+        float moveVertical = Input.GetAxis("Vertical");     // Retirns a value between -1 and 1 whenever up, down, w, or s is pushed
 
         // Debug.Log("H= " + moveHorizontal + " V= " + moveVertical);
 
