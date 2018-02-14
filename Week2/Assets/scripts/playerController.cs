@@ -1,0 +1,74 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+// Boundary class
+[System.Serializable]
+public class Boundary
+{
+    public float xMin, xMax, yMin, yMax;
+}
+
+public class playerController : MonoBehaviour {
+    
+    public float speed;
+    public Boundary boundary;
+    public GameObject laser;
+    public Transform laserSpawn;
+
+
+
+    //public float xMin;
+    //public float xMax;
+    //public float yMin;
+    //public float yMax;
+
+    // Private variables
+    private Rigidbody2D rBody;
+    public float nextFire;
+    private float myTime = 0.0f;
+    
+    // Use this for initialization
+    void Start ()
+    {
+		rBody = this.GetComponent<Rigidbody2D>();
+	}
+	
+	// Update is called once per frame
+	void Update ()
+    {
+        myTime += Time.deltaTime;
+
+        if (Input.GetButton("Fire1") && myTime > nextFire)
+        {
+            Instantiate(laser, laserSpawn.position, laserSpawn.rotation);
+            myTime = 0.0f;
+        }
+    }
+
+    // Used when performing physics calculation
+    void FixedUpdate()
+    {
+        float moveHorizontal = Input.GetAxis("Horizontal"); // Returns a value between -1 and 1 whenever left, right, a, or d is pushed
+        float moveVertical = Input.GetAxis("Vertical");     // Returns a value between -1 and 1 whenever up, down, w, or s is pushed
+
+        // Debug.Log("H= " + moveHorizontal + " V= " + moveVertical);
+
+        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
+
+        Rigidbody2D rBody = this.gameObject.GetComponent<Rigidbody2D>(); // Establishes connection to the rigidbody2D component
+        rBody.velocity = movement * speed;
+
+        //rBody.position = new Vector2(
+        //    Mathf.Clamp(rBody.position.x, -8f, 3.5f),
+        //    Mathf.Clamp(rBody.position.y, -4.5f, 4.5f));
+
+        //rBody.position = new Vector2(
+        //    Mathf.Clamp(rBody.position.x, xMin, xMax),
+        //    Mathf.Clamp(rBody.position.y, yMin,yMax));
+
+        rBody.position = new Vector2(
+            Mathf.Clamp(rBody.position.x, boundary.xMin, boundary.xMax),
+            Mathf.Clamp(rBody.position.y, boundary.yMin, boundary.yMax));
+    }
+}
