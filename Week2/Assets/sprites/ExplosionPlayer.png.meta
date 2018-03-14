@@ -99,10 +99,10 @@ TextureImporter:
       name: ExplosionPlayer_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 413
-        width: 61
-        height: 69
+        x: 0
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,10 +113,10 @@ TextureImporter:
       name: ExplosionPlayer_1
       rect:
         serializedVersion: 2
-        x: 159
-        y: 410
-        width: 68
-        height: 76
+        x: 128
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,10 +127,10 @@ TextureImporter:
       name: ExplosionPlayer_2
       rect:
         serializedVersion: 2
-        x: 283
-        y: 406
-        width: 75
-        height: 83
+        x: 256
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +141,10 @@ TextureImporter:
       name: ExplosionPlayer_3
       rect:
         serializedVersion: 2
-        x: 407
-        y: 402
-        width: 83
-        height: 91
+        x: 384
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: ExplosionPlayer_4
       rect:
         serializedVersion: 2
-        x: 20
-        y: 271
-        width: 89
-        height: 97
+        x: 0
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +169,10 @@ TextureImporter:
       name: ExplosionPlayer_5
       rect:
         serializedVersion: 2
-        x: 143
-        y: 267
-        width: 98
-        height: 105
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +183,10 @@ TextureImporter:
       name: ExplosionPlayer_6
       rect:
         serializedVersion: 2
-        x: 267
-        y: 264
-        width: 105
-        height: 111
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: ExplosionPlayer_7
       rect:
         serializedVersion: 2
-        x: 394
-        y: 260
-        width: 110
-        height: 119
+        x: 384
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,10 +211,10 @@ TextureImporter:
       name: ExplosionPlayer_8
       rect:
         serializedVersion: 2
-        x: 6
-        y: 129
-        width: 117
-        height: 125
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,9 +225,9 @@ TextureImporter:
       name: ExplosionPlayer_9
       rect:
         serializedVersion: 2
-        x: 132
+        x: 128
         y: 128
-        width: 122
+        width: 128
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: ExplosionPlayer_10
       rect:
         serializedVersion: 2
-        x: 273
-        y: 140
-        width: 96
-        height: 103
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,10 +253,10 @@ TextureImporter:
       name: ExplosionPlayer_11
       rect:
         serializedVersion: 2
-        x: 414
-        y: 154
-        width: 65
-        height: 74
+        x: 384
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,10 +267,10 @@ TextureImporter:
       name: ExplosionPlayer_12
       rect:
         serializedVersion: 2
-        x: 29
-        y: 25
-        width: 67
-        height: 76
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: ExplosionPlayer_13
       rect:
         serializedVersion: 2
-        x: 161
-        y: 24
-        width: 63
-        height: 77
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,10 +295,10 @@ TextureImporter:
       name: ExplosionPlayer_14
       rect:
         serializedVersion: 2
-        x: 292
-        y: 33
-        width: 62
-        height: 61
+        x: 256
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,10 +309,10 @@ TextureImporter:
       name: ExplosionPlayer_15
       rect:
         serializedVersion: 2
-        x: 421
-        y: 48
-        width: 48
-        height: 47
+        x: 384
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
