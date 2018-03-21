@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// New using statements
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
@@ -11,6 +14,10 @@ public class GameController : MonoBehaviour {
     public float spawnWait; // How long between each hazard in each wave?
     public float waveWait; // How long between each wave of enemies?
 
+    public Text scoreText;
+    public Text restartText;
+    public Text gameOverText;
+
     private bool gameOver;
     private bool restart;
     private int score;
@@ -19,6 +26,13 @@ public class GameController : MonoBehaviour {
 	void Start ()
     {
         score = 0;
+
+        scoreText.text = "";
+        restartText.text = "";
+        gameOverText.text = "";
+
+        UpdateScore();
+
         StartCoroutine(SpawnWaves());
     }
 		
@@ -27,7 +41,21 @@ public class GameController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        if (restart)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                // The old way (don't use this one)
+                // Application.LoadLevel(Application.loadedLevel);
+                //SceneManager.LoadScene("Spaceshooter"); // <-- This works fine but prone to error
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // <-- Better but more complicated
+            }
+        }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     IEnumerator SpawnWaves()
@@ -47,20 +75,33 @@ public class GameController : MonoBehaviour {
 
             if (gameOver)
             {
+                restartText.gameObject.SetActive(true);
+                restartText.text = "Press R for Restart";
+                restart = true;
                 break;
             }
         }
+    }
+
+    // Update the score text
+    void UpdateScore()
+    {
+        scoreText.text = "Score: " + score;
     }
 	
     public void AddScore(int newScoreValue)
     {
         score += newScoreValue;
-        Debug.Log("Score is " + score);
+        // score += newScoreValue;
+        // Debug.Log("Score is " + score);
+        UpdateScore();
     }
     
     public void GameOver()
     {
-        Debug.Log("Game is Over");
+        // Debug.Log("Game is Over");
+        gameOverText.gameObject.SetActive(true);
+        gameOverText.text = "Game Over";
         gameOver = true;
     }
 
