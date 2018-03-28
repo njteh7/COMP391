@@ -43,12 +43,12 @@ public class GameManager : MonoBehaviour
             theBall.SendMessage("RestartGame", 0.5f, SendMessageOptions.RequireReceiver);
         }
 
-        if (PlayerScore1 == 10)
+        if (PlayerScore1 == 3)
         {
             GUI.Label(new Rect(Screen.width / 2 - 150, 200, 2000, 1000), "PLAYER ONE WINS");
             theBall.SendMessage("ResetBall", null, SendMessageOptions.RequireReceiver);
         }
-        else if (PlayerScore2 == 10)
+        else if (PlayerScore2 == 3)
         {
             GUI.Label(new Rect(Screen.width / 2 - 150, 200, 2000, 1000), "PLAYER TWO WINS");
             theBall.SendMessage("ResetBall", null, SendMessageOptions.RequireReceiver);
