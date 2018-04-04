@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour {
     public float spawnWait; // How long between each hazard in each wave?
     public float waveWait; // How long between each wave of enemies?
 
+    [Header("Text Options")]
     public Text scoreText;
     public Text restartText;
     public Text gameOverText;
