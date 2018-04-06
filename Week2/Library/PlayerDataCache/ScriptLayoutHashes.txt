@@ -146,3 +146,4 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DistroyObject
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BoundaryDistroyer
 dd5481137759597d614818793c90a7fe Assembly-CSharp.dll:.Mover
+1d531b750dfdef0831a468782c22ae6a Assembly-CSharp.dll:.PauseController
